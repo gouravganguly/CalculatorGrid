@@ -43,9 +43,79 @@ canvas
 }
 
 
+header, section, aside, footer {
+  color: #c2baba54;
+	padding:1em;
+  text-align: center;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  
+}
+p {
+  line-height: 170%;
+}
 
+header{ 
+  grid-area: header;
+}
+
+nav{ 
+	grid-area: nav;
+}
+
+section{ 
+	grid-area: section;
+}
+
+aside{ 
+	grid-area: aside;
+}
+
+footer{ 
+	grid-area: footer;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-areas:  "header"
+                        "section"
+                        "nav"
+                        "aside"
+                        "footer";
+}
+@media only screen and (min-width: 720px) {
+	
+	.grid{
+		display: grid;
+		grid-template-areas: 	"header header header"
+								"section section section"
+								"nav nav aside"
+								"footer footer footer";	
+	}
+}
+
+/* Apply the following styles to screens > 1024px */
+@media only screen and (min-width: 1024px) {
+    
+	.grid{
+		display: grid;
+		grid-template-areas: 	"header header header"
+								          "section nav aside"
+								          "footer footer footer";	
+  }
+  
+}
+
+
+
+.header, .section, .aside, .footer {
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px;
+  background-color: #c2baba18;
+}
 /* limit the width and center */
-.calculator   {
+.calculator  {
   max-width: 400px;
   margin: 0 auto;
   border: 2px solid #111;
@@ -91,8 +161,22 @@ canvas
   /* add the grid gap */
   grid-gap: 15px;
 
-  border-top: 2px solid #111;
+  /* border-top: 2px solid #111; */
 }
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-gap: 10px; */
+
+}
+img {
+  border: 2px solid #dddddd;
+  /* vertical-align: middle; */
+  opacity: 50%;
+
+}
+
 
 /* span across 3 columns */
 .is-zero
