@@ -6,36 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <div id="particles-js"></div>
     <div class="main-container" style="margin-top:50px;">    
         <div class="calculator">
             <!-- the input -->
-            <input type="number">
+            <!-- <input type="number"> -->
             <!-- the buttons -->
-            <div class="calculator-buttons">
-              <button class="calc-button is-clear" onclick="getData()">C</button>
-              <button class="calc-button">&divide;</button>
+            <div id="result">
+                <div id="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div> 
+            </div>
+            <div class="calculator-buttons">    
+              <button class="is-operator is-clear" id="clear">C</button>
+              <button class="is-operator" id="backspace">CE</button>
+              <button class="is-operator" id="/">&divide;</button>
           
-              <button class="calc-button">7</button>
-              <button class="calc-button">8</button>
-              <button class="calc-button">9</button>
-              <button class="calc-button">&times;</button>
+              <button class="is-number">7</button>
+              <button class="is-number">8</button>
+              <button class="is-number">9</button>
+              <button class="is-operator" id="*">&times;</button>
           
-              <button class="calc-button">4</button>
-              <button class="calc-button">5</button>
-              <button class="calc-button">6</button>
-              <button class="calc-button">&minus;</button>
+              <button class="is-number">4</button>
+              <button class="is-number">5</button>
+              <button class="is-number">6</button>
+              <button class="is-operator" id="-">&minus;</button>
           
-              <button class="calc-button">1</button>
-              <button class="calc-button">2</button>
-              <button class="calc-button">3</button>
-              <button class="calc-button">&plus;</button>
+              <button class="is-number">1</button>
+              <button class="is-number">2</button>
+              <button class="is-number">3</button>
+              <button class="is-operator" id="+">&plus;</button>
           
-              <button class="calc-button is-zero">0</button>
-              <button class="calc-button is-equals">&equals;</button>
+              <button class="is-number is-zero">0</button>
+              <button class="is-operator is-equals" id="=">&equals;</button>
             </div>
             
         </div>
@@ -43,8 +52,8 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS.load('particles-js', 'particles.json', function() {
-        console.log('callback - particles.js config loaded');
     });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
