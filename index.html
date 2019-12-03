@@ -11,7 +11,6 @@
 <body>
     <div id="particles-js"></div>
     <div class="main-container grid" >
-        <!-- <div class="grid"> -->
         <header>
             <div class="header"><h1>Grid Calculator</h1></div>
         </header>
@@ -21,77 +20,68 @@
                 <p>Web pages can be viewed using many different devices: desktops, tablets, and phones. Your web page should look good, and be easy to use, regardless of the device.</p>
                 <p>Web pages should not leave out information to fit smaller devices, but rather adapt its content to fit any device:</p>
                 <div class="grid2">
-                   <div> <img src="https://www.w3schools.com/css/rwd_desktop.png"></div>
+                   <div><img src="https://www.w3schools.com/css/rwd_desktop.png"></div>
                    <p>Desktop</p>
                    <div> <img src="https://www.w3schools.com/css/rwd_tablet.png"> <img src="https://www.w3schools.com/css/rwd_phone.png"></div>
                     <p>Tablet&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMobile</p>
                 </div>
-                <p>It is called responsive web design when you use CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen</p>
-                
+                <p>It is called responsive web design when you use CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen</p>  
             </div>
         </section>
-        <nav>
-            
-        <div class="calculator">
-            <!-- the input -->
-            <!-- <input type="number"> -->
-            <!-- the buttons -->
-            <div id="result">
-                <div id="history">
-                    <p id="history-value"></p>
+        <nav>   
+            <div class="calculator">
+                <div id="result">
+                    <div id="history">
+                        <p id="history-value"></p>
+                    </div>
+                    <div id="output">
+                        <p id="output-value"></p>
+                    </div> 
                 </div>
-                <div id="output">
-                    <p id="output-value"></p>
-                </div> 
-            </div>
-            <div class="calculator-buttons">    
-              <button class="is-operator is-clear" id="clear">C</button>
-              <button class="is-operator" id="backspace">CE</button>
-              <button class="is-operator" id="/">&divide;</button>
-          
-              <button class="is-number">7</button>
-              <button class="is-number">8</button>
-              <button class="is-number">9</button>
-              <button class="is-operator" id="*">&times;</button>
-          
-              <button class="is-number">4</button>
-              <button class="is-number">5</button>
-              <button class="is-number">6</button>
-              <button class="is-operator" id="-">&minus;</button>
-          
-              <button class="is-number">1</button>
-              <button class="is-number">2</button>
-              <button class="is-number">3</button>
-              <button class="is-operator" id="+">&plus;</button>
-          
-              <button class="is-number is-zero">0</button>
-              <button class="is-operator is-equals" id="=">&equals;</button>
-            </div>
+                <div class="calculator-buttons">    
+                <button class="is-operator is-clear" id="clear">C</button>
+                <button class="is-operator" id="backspace">CE</button>
+                <button class="is-operator" id="/">&divide;</button>
             
-        </div>
-    </nav>
-    <aside>
-        <div class="aside">
-            <h3>CSS Grid Layout</h3>
-            <p>CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows, unlike flexbox which is largely a 1-dimensional system. You work with Grid Layout by applying CSS rules both to a parent element (which becomes the Grid Container) and to that element's children (which become Grid Items).</p>
-            <p>Template Areas of CSS Grid</p>
-            <div class="grid2">
-                <div><img src="https://css-tricks.com/wp-content/uploads/2018/11/dddgrid-template-areas.svg" style="width: 100%;" ></div>
-                
-                <div> <img src="https://www.w3schools.com/css/rwd_desktop.png" style="opacity: 0%;"></div>
-            </div>
+                <button class="is-number">7</button>
+                <button class="is-number">8</button>
+                <button class="is-number">9</button>
+                <button class="is-operator" id="*">&times;</button>
             
-        </div>
-    </aside>
-    <footer >
-        <div class="footer"><h3>Design By: Gourav Ganguly</h3></div>
-    </footer>
-    <!-- </div>    -->
-</div>
+                <button class="is-number">4</button>
+                <button class="is-number">5</button>
+                <button class="is-number">6</button>
+                <button class="is-operator" id="-">&minus;</button>
+            
+                <button class="is-number">1</button>
+                <button class="is-number">2</button>
+                <button class="is-number">3</button>
+                <button class="is-operator" id="+">&plus;</button>
+            
+                <button class="is-number is-zero">0</button>
+                <button class="is-operator is-equals" id="=">&equals;</button>
+                </div>   
+            </div>
+        </nav>
+        <aside>
+            <div class="aside">
+                <h3>CSS Grid Layout</h3>
+                <p>CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows, unlike flexbox which is largely a 1-dimensional system. You work with Grid Layout by applying CSS rules both to a parent element (which becomes the Grid Container) and to that element's children (which become Grid Items).</p>
+                <p>Template Areas of CSS Grid</p>
+                <div class="grid2">
+                    <div><img src="https://css-tricks.com/wp-content/uploads/2018/11/dddgrid-template-areas.svg" style="width: 100%;" ></div>                    
+                    <div> <img src="https://www.w3schools.com/css/rwd_desktop.png" style="opacity: 0%;"></div>
+                </div>    
+            </div>
+        </aside>
+        <footer >
+            <div class="footer"><h3>Design By: Gourav Ganguly</h3></div>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS.load('particles-js', 'particles.json', function() {
-    });
+        });
     </script>
     <script src="script.js"></script>
 </body>

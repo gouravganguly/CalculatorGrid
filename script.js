@@ -43,7 +43,7 @@ for(var i = 0;i < operator.length; i++){
 		}
 		else if(this.id == "backspace"){
 			var output = reverseNumberFormat(getOutput()).toString();
-			if(output){//if output has a value
+			if(output){
 				output = output.substr(0, output.length - 1);
 				printOutput(output);
 			}
