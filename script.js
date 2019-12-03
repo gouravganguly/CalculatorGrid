@@ -80,7 +80,6 @@ for(let i = 0; i < number.length; i++) {
     number[i].addEventListener('click', function() {
     	let output = reverseNumberFormat(getOutput());
         output += this.innerHTML;
-        console.log(output);
         printOutput(output);
     });
 }
